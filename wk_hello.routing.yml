@@ -5,3 +5,11 @@ wk_hello.content:
     _title: 'weKnow Hello'
   requirements:
     _permission: 'access content'
+
+wk_hello.config_form:
+  path: '/admin/config/wk_hello/config'
+  defaults:
+    _form: 'Drupal\wk_hello\Form\WkHelloSettingsForm'
+    _title: 'Simple custom form example'
+  requirements:
+    _permission: 'access content'
