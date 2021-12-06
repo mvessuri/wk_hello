@@ -1,0 +1,7 @@
+wk_hello.content:
+  path: '/wk/hello'
+  defaults:
+    _controller: '\Drupal\wk_hello\Controller\WkHelloController::content'
+    _title: 'weKnow Hello'
+  requirements:
+    _permission: 'access content'

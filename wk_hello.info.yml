@@ -1,0 +1,5 @@
+name: weKnow Hello Module
+description: My First Drupal Module Training.
+package: weKnow Drupal Training
+type: module
+core_version_requirement: ^8 || ^9
