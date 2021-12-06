@@ -1,0 +1,4 @@
+services:
+  wk_hello.salutation:
+    class: Drupal\wk_hello\WkHelloSalutation
+    arguments: ['@current_user']
