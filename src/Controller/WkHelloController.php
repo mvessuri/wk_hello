@@ -12,25 +12,27 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
 class WkHelloController extends ControllerBase {
 
   /**
-   * @var WkHelloSalutationInterface $salutation
+   * The salutation service.
+   *
+   * @var \Drupal\wk_hello\WkHelloSalutationInterface
    */
   protected $salutation;
 
   /**
    * Class constructor.
    */
-  public function __construct(WkHelloSalutationInterface $salutation)
-  {
+  public function __construct(WkHelloSalutationInterface $salutation) {
     $this->salutation = $salutation;
   }
 
-  public static function create(ContainerInterface $container)
-  {
+  /**
+   * {@inheritdoc}
+   */
+  public static function create(ContainerInterface $container) {
     return new static(
       $container->get('wk_hello.salutation')
     );
   }
-
 
   /**
    * Displays a hello message.

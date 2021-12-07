@@ -2,7 +2,14 @@
 
 namespace Drupal\wk_hello;
 
-interface WkHelloSalutationInterface
-{
+/**
+ * Salutation interface.
+ */
+interface WkHelloSalutationInterface {
+
+  /**
+   * Returns a salutation for the current user.
+   */
   public function getSalutation();
+
 }
