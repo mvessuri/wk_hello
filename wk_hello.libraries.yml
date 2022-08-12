@@ -1,0 +1,5 @@
+weather:
+  version: 1.x
+  css:
+    weather:
+      css/wk-hello-weather.css: {}

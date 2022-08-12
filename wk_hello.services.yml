@@ -2,3 +2,6 @@ services:
   wk_hello.salutation:
     class: Drupal\wk_hello\WkHelloSalutation
     arguments: ['@current_user']
+  wk_hello.weather:
+    class: Drupal\wk_hello\WkHelloWeather
+    arguments: ['@http_client', '@config.factory']

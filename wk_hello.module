@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+ function wk_hello_theme() {
+   return [
+     'wk_hello_weather' => [
+       'variables' => [
+         'location' => NULL,
+         'condition' => NULL,
+         'temperature' => NULL,
+         'icon' => NULL,
+         'wind' => NULL,
+         'wind_direction' => NULL,
+         'precipitation' => NULL,
+         'humidity' => NULL,
+       ],
+     ],
+   ];
+ }
